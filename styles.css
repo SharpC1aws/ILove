@@ -614,13 +614,18 @@ body {
   position: absolute;
   bottom: 8px;
   right: 8px;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   color: #fff;
   font-size: 0.72rem;
   padding: 0.2rem 0.55rem;
   border-radius: 6px;
   letter-spacing: 0.04em;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .postcard-meta {
@@ -645,6 +650,8 @@ body {
   line-height: 1.25;
   color: #1e1b2e;
   font-weight: 700;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .postcard-subtext {
@@ -1277,10 +1284,15 @@ body {
   left: 10px;
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: var(--accent-champagne);
   padding: 0.3rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.75rem;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .modal-details {

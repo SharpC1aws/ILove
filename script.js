@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. PHOTOS DATASET & NARRATIVE
+   1. PHOTOS DATASET & NARRATIVE (CORRECTED DAYTIME MEMORIES)
    ========================================================================== */
 
 const MEMORIES = [
@@ -27,20 +27,20 @@ const MEMORIES = [
     id: 1,
     img: 'photos/photo_2026-06-14_00-54-05.jpg',
     fallbackImg: '../photo_2026-06-14_00-54-05.jpg',
-    date: '14 Июня • Начало лета',
-    title: 'Первые летние ночи',
-    caption: 'Когда прогулки до утра казались слишком короткими...',
-    desc: 'Мы гуляли часами, говорили обо всём на свете, и именно тогда я понял: с этой девушкой я хочу провести всю свою жизнь.',
+    date: '14 Июня • Солнечный день',
+    title: 'Наша дневная прогулка',
+    caption: 'Тот самый яркий июньский день...',
+    desc: 'Мы гуляли под тёплым солнцем, говорили обо всём на свете, и именно тогда я понял: с этой девушкой я хочу провести всю свою жизнь.',
     likes: 384
   },
   {
     id: 2,
     img: 'photos/photo_2026-06-14_00-54-11.jpg',
     fallbackImg: '../photo_2026-06-14_00-54-11.jpg',
-    date: '14 Июня • Самый тёплый взгляд',
-    title: 'Твоя улыбка',
-    caption: 'Улыбка, в которую невозможно не влюбиться',
-    desc: 'Каждый раз, когда ты так смотришь на меня, весь мир вокруг замирает. В твоих глазах — мой самый настоящий дом.',
+    date: '14 Июня • Солнечное сияние',
+    title: 'Твоя улыбка при свете солнца',
+    caption: 'Улыбка, которая затмевает любое солнце',
+    desc: 'Каждый раз, когда ты так лучезарно улыбаешься при свете дня, весь мир вокруг замирает. В твоих глазах — мой самый настоящий дом.',
     likes: 420
   },
   {
@@ -397,7 +397,6 @@ function initAudioExperience() {
   const musicBtn = document.getElementById('music-toggle');
   if (!musicBtn) return;
 
-  // Unlock mobile web audio on any initial interaction
   const unlockAudio = () => {
     if (!audioCtx) {
       audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -538,7 +537,7 @@ function initLoveCounter() {
 }
 
 /* ==========================================================================
-   7. TIMELINE POSTCARDS RENDERING
+   7. TIMELINE POSTCARDS RENDERING (CORRECTED TITLES & MOBILE FIT)
    ========================================================================== */
 
 function renderTimelinePostcards() {
