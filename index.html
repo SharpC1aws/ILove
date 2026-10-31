@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0610">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Вика & Славик — 1 Год Нашей Любви (с 30 октября 2025)</title>
+  
+  <!-- Favicon Heart -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+  <!-- Google Fonts: Editorial Serif, Intimate Handwriting, Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Rose Petals & Stardust Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Floating Audio & Atmosphere Controller -->
+  <header class="top-nav">
+    <div class="nav-brand">
+      <span class="heart-pulse">❤️</span>
+      <span class="brand-text">Vika & Slavik</span>
+    </div>
+    <div class="nav-controls">
+      <button id="music-toggle" class="glass-pill-btn" aria-label="Включить романтическую музыку" title="Романтическая мелодия">
+        <span class="music-icon">🎵</span>
+        <span class="music-label">Музыка: Вкл</span>
+        <span class="music-waves">
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+        </span>
+      </button>
+      <button id="hearts-shower-btn" class="glass-pill-btn heart-btn" title="Отправить сердечки">
+        <span>✨ Люблю тебя</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="hero-tag" data-reveal>
+          <span class="tag-sparkle">✦</span>
+          <span>Начало нашей истории: 30 октября 2025</span>
+          <span class="tag-sparkle">✦</span>
+        </div>
+
+        <h1 class="hero-title" data-reveal>
+          <span class="title-sub">Вика, наш</span>
+          <span class="title-main">1 Год Вместе</span>
+        </h1>
+
+        <p class="hero-quote" data-reveal>
+          «С 30 октября 2025 года: сотни незабываемых закатов, тысячи нежных взглядов и одна бесконечная любовь...»
+        </p>
+
+        <!-- Live Love Stopwatch anchored to 30 October 2025 -->
+        <div class="love-counter-box" data-reveal>
+          <div class="counter-header">
+            <span class="pulse-dot"></span>
+            <span>Мы счастливы вместе с 30 октября 2025 года:</span>
+          </div>
+          <div class="counter-grid">
+            <div class="counter-card">
+              <span class="counter-num" id="count-days">366</span>
+              <span class="counter-unit">дней</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-num" id="count-hours">24</span>
+              <span class="counter-unit">часов</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-num" id="count-minutes">60</span>
+              <span class="counter-unit">минут</span>
+            </div>
+            <div class="counter-card highlight">
+              <span class="counter-num" id="count-seconds">60</span>
+              <span class="counter-unit">секунд</span>
+            </div>
+          </div>
+          <div class="counter-footer">
+            ...и каждая секунда с тобой — самый лучший подарок в жизни
+          </div>
+        </div>
+
+        <!-- Scroll down indicator -->
+        <a href="#memories" class="scroll-cue" aria-label="Листать вниз к воспоминаниям">
+          <span class="scroll-label">Листай вниз, любимая</span>
+          <div class="scroll-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CHAPTER 1: TIMELINE OF POSTCARDS -->
+    <section class="section memories-section" id="memories">
+      <div class="section-header" data-reveal>
+        <span class="section-subtitle">Глава I • Наши Моменты</span>
+        <h2 class="section-title">Каждая открытка — частичка нашего пути</h2>
+        <p class="section-desc">
+          Нажми на любую фотографию, чтобы рассмотреть её поближе и прочесть то, о чём поёт моё сердце.
+        </p>
+      </div>
+
+      <div class="postcards-timeline" id="postcards-container">
+        <!-- Postcard items dynamically generated with authentic photos -->
+      </div>
+    </section>
+
+    <!-- CHAPTER 2: REASONS WHY I LOVE YOU -->
+    <section class="section reasons-section" id="reasons">
+      <div class="section-header" data-reveal>
+        <span class="section-subtitle">Глава II • Мои Признания</span>
+        <h2 class="section-title">За что я люблю тебя, Вика?</h2>
+        <p class="section-desc">
+          Нажимай на карточки, чтобы открыть маленькие тайны того, почему ты для меня — целый мир.
+        </p>
+      </div>
+
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- Reason Cards with flip / reveal -->
+      </div>
+    </section>
+
+    <!-- CHAPTER 3: INTERACTIVE WAX-SEALED LOVE LETTER -->
+    <section class="section letter-section" id="letter">
+      <div class="section-header" data-reveal>
+        <span class="section-subtitle">Глава III • Письмо Моему Сердцу</span>
+        <h2 class="section-title">Конверт только для тебя</h2>
+        <p class="section-desc">Коснись сургучной печати, чтобы распечатать письмо</p>
+      </div>
+
+      <div class="envelope-wrapper" data-reveal>
+        <div class="envelope" id="love-envelope">
+          <div class="envelope-front">
+            <div class="wax-seal" id="wax-seal" title="Нажми, чтобы открыть!">
+              <div class="seal-inner">
+                <span>V ❤️ S</span>
+              </div>
+            </div>
+            <div class="envelope-stamp">
+              <span class="stamp-icon">💌</span>
+              <span class="stamp-text">30.10.2025</span>
+            </div>
+            <div class="envelope-address">
+              <span class="handwritten to">Моей любимой девочке Викуле</span>
+              <span class="handwritten from">От Славика, который тебя бесконечно любит</span>
+            </div>
+          </div>
+          
+          <div class="letter-paper" id="letter-paper">
+            <div class="paper-texture"></div>
+            <div class="letter-content">
+              <div class="letter-date">30 октября 2025 • Начало нашей бесконечности</div>
+              <h3 class="letter-greeting">Моя любимая, родная Вика...</h3>
+              <p>
+                30 октября 2025 года произошло самое прекрасное и судьбоносное событие в моей жизни — мы стали парой.
+                Ровно год назад мир обрел для меня истинные краски, и с того самого осеннего дня я просыпаюсь
+                с ощущением безграничного счастья, спокойствия и тепла в груди.
+              </p>
+              <p>
+                Спасибо тебе за твою невероятную улыбку, от которой растворяются любые тревоги. За твой звонкий смех, 
+                за твои уютные объятия, в которых я всегда чувствую себя дома. За то, как ты заботишься обо мне, 
+                и за то, как мы умеем понимать друг друга без единого слова.
+              </p>
+              <p>
+                Этот первый год с 30 октября — только самая первая, прекрасная страница нашей долгой и счастливой книги. 
+                Я обещаю беречь тебя, радовать каждый день, держать тебя за руку в любые моменты и любить тебя 
+                ещё сильнее с каждой новой секундой.
+              </p>
+              <p class="letter-closing">
+                С нашей первой годовщиной, мое маленькое счастье! 💖
+              </p>
+              <div class="letter-signature">
+                <span>Навеки твой,</span>
+                <strong>Славик</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4: COMPLIMENT MACHINE & SWEET WISHES -->
+    <section class="section compliments-section" id="compliments">
+      <div class="section-header" data-reveal>
+        <span class="section-subtitle">Глава IV • Баночка Тёплых Слов</span>
+        <h2 class="section-title">Когда тебе нужно немного тепла</h2>
+        <p class="section-desc">
+          Нажми на кнопку в любой момент дня — и узнай, какая ты у меня особенная.
+        </p>
+      </div>
+
+      <div class="compliment-card-box" data-reveal>
+        <div class="jar-glow"></div>
+        <div class="compliment-content" id="compliment-display">
+          <span class="quote-mark">“</span>
+          <p class="compliment-text" id="compliment-text">
+            Викуля, твои глаза — это самое красивое место, в котором я когда-либо терялся.
+          </p>
+          <span class="quote-mark closing">”</span>
+        </div>
+        <button id="next-compliment-btn" class="accent-glow-btn">
+          <span>✨ Получить ещё одно тёплое признание</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5: GALLERY & MEMORY WALL -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-header" data-reveal>
+        <span class="section-subtitle">Глава V • Сокровищница Моментов</span>
+        <h2 class="section-title">Все наши улыбки этого года</h2>
+        <p class="section-desc">
+          19 живых мгновений, каждое из которых греет мне душу
+        </p>
+      </div>
+
+      <div class="bento-gallery" id="bento-gallery">
+        <!-- Filled dynamically with all 19 photos -->
+      </div>
+    </section>
+
+    <!-- FINALE / FOOTER -->
+    <footer class="anniversary-footer" data-reveal>
+      <div class="footer-orb"></div>
+      <div class="footer-heart-big">❤️</div>
+      <h2 class="footer-title">Вика + Славик = Навсегда</h2>
+      <p class="footer-sub">
+        Первый год подошел к концу, а впереди — целая бесконечность любви, путешествий, смеха и счастья.
+      </p>
+      <div class="footer-actions">
+        <button id="final-love-btn" class="accent-glow-btn pulse-glow">
+          <span>💖 Я тоже безумно люблю тебя! 💖</span>
+        </button>
+      </div>
+      <div class="footer-credits">
+        С любовью создано Славиком специально для Вики • Вместе с 30 октября 2025 года
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR HIGH-RES PHOTOS -->
+  <div class="modal-backdrop" id="photo-modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Закрыть">✕</button>
+      <div class="modal-photo-wrapper">
+        <img src="" alt="Фотография Вики и Славика" id="modal-img">
+        <div class="modal-badge" id="modal-badge">Июнь 2026</div>
+      </div>
+      <div class="modal-details">
+        <h3 id="modal-title">Название момента</h3>
+        <p id="modal-caption">Описание теплых воспоминаний и слов любви.</p>
+        <div class="modal-actions">
+          <button class="modal-heart-action" id="modal-like-btn">
+            <span class="like-heart">❤️</span>
+            <span id="modal-likes-count">365 отметок «Люблю»</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING HEARTS CONTAINER -->
+  <div id="floating-hearts-layer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
